@@ -1,0 +1,7 @@
+.order-details-confirm-modal {
+    @include default-modal;
+
+    .deriv-modal__close-icon {
+        margin-right: 0;
+    }
+}

@@ -1,0 +1,34 @@
+.search {
+    width: 100%;
+    background-color: #fff;
+
+    .deriv-input {
+        padding: 6px 8px;
+        font-size: 1.4rem;
+
+        &__container {
+            width: 100%;
+        }
+        &__field {
+            margin-left: 0.8rem;
+
+            // placeholder is hidden when input is focused, visibility hidden doesn't work with firefox.
+            &::-moz-placeholder {
+                color: transparent;
+            }
+
+            &:not(:placeholder-shown) ~ label,
+            &:focus ~ label {
+                display: none;
+            }
+        }
+
+        &__helper-message {
+            display: none;
+        }
+
+        &__label {
+            left: 3rem;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+.error-modal {
+    width: 44rem;
+    height: unset;
+    border-radius: 8px;
+
+    @include mobile {
+        max-width: 34rem;
+    }
+
+    &__body {
+        padding: 2.4rem;
+
+        @include mobile {
+            padding: 1.6rem;
+        }
+    }
+}

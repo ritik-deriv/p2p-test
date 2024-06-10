@@ -1,0 +1,25 @@
+.order-details {
+    overflow: overlay;
+    height: calc(100vh - 22rem);
+
+    @include mobile {
+        position: absolute;
+        top: 8rem;
+        height: calc(100vh - 8rem);
+
+        & .mobile-wrapper {
+            &__header {
+                background: #fff;
+            }
+
+            &__body {
+                overflow-y: scroll;
+            }
+
+            &__footer {
+                padding: 0;
+                border: none;
+            }
+        }
+    }
+}

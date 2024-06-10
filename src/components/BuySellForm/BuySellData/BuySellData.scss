@@ -1,0 +1,11 @@
+.buy-sell-data {
+    &__details {
+        display: flex;
+        margin-bottom: 1.6rem;
+
+        @include mobile {
+            flex-direction: column;
+            gap: 1.6rem;
+        }
+    }
+}

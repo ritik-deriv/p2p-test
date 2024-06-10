@@ -1,0 +1,8 @@
+.app-header {
+    padding: 2.4rem;
+
+    @include mobile {
+        padding-left: 0;
+        height: 4rem;
+    }
+}

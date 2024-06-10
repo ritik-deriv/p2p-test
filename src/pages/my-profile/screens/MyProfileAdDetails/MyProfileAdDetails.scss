@@ -1,0 +1,36 @@
+.my-profile-ad-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 2.4rem;
+
+    @include mobile {
+        padding: 2rem;
+    }
+
+    &__border {
+        border-top: 2px solid #f2f3f4;
+        width: 100%;
+    }
+
+    &__mobile-wrapper {
+        position: absolute;
+        top: 4rem;
+        height: calc(100vh - 4rem);
+    }
+
+    & .deriv-textarea {
+        &__footer {
+            & .deriv-text {
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    &__button {
+        &--submitting {
+            //TODO: add this variant to deriv-com/ui
+            background-color: #4bb4b3 !important;
+        }
+    }
+}

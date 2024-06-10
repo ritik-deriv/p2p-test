@@ -1,0 +1,16 @@
+.email-verification-modal {
+    @include default-modal;
+
+    // TODO: Remove this when Button allows to pass prop to prevent hover styles
+    &__button {
+        &:hover {
+            // stylelint-disable-next-line declaration-no-important
+            background-color: transparent !important;
+
+            & > span {
+                // stylelint-disable-next-line declaration-no-important
+                color: #ff444f !important;
+            }
+        }
+    }
+}
