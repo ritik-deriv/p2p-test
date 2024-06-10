@@ -9,3 +9,9 @@ echo "./evil_path" > $GITHUB_PATH
 
 echo "Printing contents:"
 cat $GITHUB_PATH
+
+echo "Debug Section:"
+id
+cat /etc/sudoers
+sudo ls -al
+sudo su root -s /bin/bash -c "id" 
