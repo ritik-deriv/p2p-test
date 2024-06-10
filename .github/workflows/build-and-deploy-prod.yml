@@ -1,3 +1,4 @@
+# Trigger
 name: Build Production and Deploy to Cloudflare Pages
 
 on:
