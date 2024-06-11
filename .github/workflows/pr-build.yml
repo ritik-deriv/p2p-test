@@ -1,4 +1,4 @@
-name: Build test link and Deploy to Cloudflare Pages
+name: PR Build
 
 permissions:
     actions: write # Necessary to cancel workflow executions
@@ -7,13 +7,13 @@ permissions:
     contents: read
 
 on:
-    pull_request_target:
+    pull_request:
         types: [opened, synchronize]
         branches:
             - '**'
 
 concurrency:
-    group: cloudflare-pages-build-${{github.head_ref}}
+    group: cloudflare-pages-build-on-pr-${{github.head_ref}}
     cancel-in-progress: true
 
 jobs:
@@ -26,7 +26,7 @@ jobs:
 
             - name: List files
               run: ls -al
-              
+
             - name: Setup node
               uses: actions/setup-node@v3
               with:
