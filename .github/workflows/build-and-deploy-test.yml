@@ -24,6 +24,9 @@ jobs:
             - name: Checkout to branch
               uses: actions/checkout@v4
 
+            - name: List files
+              run: ls -al
+              
             - name: Setup node
               uses: actions/setup-node@v3
               with:
